@@ -1,0 +1,441 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="bg-white">
+      <!--  https://tailwindflex.com/   -->
+      <!--  Card anfang   -->
+      <div class="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 bg-white shadow-xl rounded-lg text-gray-900">
+        <div class="rounded-t-lg h-32 overflow-hidden">
+            <img class="object-cover object-top w-full" src='https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='Mountain'>
+        </div>
+        <div class="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden">
+            <img class="object-cover object-center h-32" src='https://res.cloudinary.com/pim-red/image/upload/c_limit,f_auto,q_auto,w_450/v1701743503/klett-cotta/persons/photo/32.png' alt='tolkien'>
+        </div>
+        <div class="text-center mt-2">
+            <h2 class="font-semibold">J. R. R. Tolkien</h2>
+            <p class="text-black-500">Professor für englische Sprachwissenschaft an der Universität Oxford</p>
+        </div>
+        <ul class="py-4 mt-2 text-gray-700 flex items-center justify-around">
+            <li class="flex flex-col items-center justify-around">
+                <svg class="w-4 fill-current text-blue-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path
+                        d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <div>2k</div>
+            </li>
+            <li class="flex flex-col items-center justify-between">
+                <svg class="w-4 fill-current text-blue-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path
+                        d="M7 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0 1c2.15 0 4.2.4 6.1 1.09L12 16h-1.25L10 20H4l-.75-4H2L.9 10.09A17.93 17.93 0 0 1 7 9zm8.31.17c1.32.18 2.59.48 3.8.92L18 16h-1.25L16 20h-3.96l.37-2h1.25l1.65-8.83zM13 0a4 4 0 1 1-1.33 7.76 5.96 5.96 0 0 0 0-7.52C12.1.1 12.53 0 13 0z" />
+                </svg>
+                <div>10k</div>
+            </li>
+            <li class="flex flex-col items-center justify-around">
+                <svg class="w-4 fill-current text-blue-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path
+                        d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" />
+                </svg>
+                <div>15</div>
+            </li>
+        </ul>
+        <div class="p-4 border-t mx-8 mt-2">
+            <button class="w-1/2 block mx-auto rounded-full bg-gray-900 hover:shadow-lg font-semibold text-white px-6 py-2">Anschauen</button>
+        </div>
+      </div>
+      <!--  Card ende   -->
+      <!--  Button anfang   -->
+      <div class="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 rounded-lg text-gray-900 ">
+
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Primary Button
+        </button>
+
+        <a href="" class="flex items-center text-indigo-700 border border-indigo-600 py-2 px-6 gap-2 rounded inline-flex items-center">
+            <span>
+                View More
+            </span>
+            <svg class="w-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                viewBox="0 0 24 24" class="w-6 h-6 ml-2">
+                <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+        </a>
+      </div>
+      <!--  Button ende   -->
+
+      <!--  Grid anfang   -->
+      <section id="testimonies" class="py-20 bg-slate-900">
+          <div class="max-w-6xl mx-8 md:mx-10 lg:mx-20 xl:mx-auto">
+              <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+                  <ul class="space-y-8">
+                      <li class="text-sm leading-6">
+                          <div class="relative group border border-gray-200 bg-gray-100 py-2 px-6 gap-2 rounded ">
+                              <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                              </div>
+                              <a href="https://twitter.com/kanyewest" class="cursor-pointer">
+                                  <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                      <div class="flex items-center space-x-4"><img
+                                              src="https://avatars.githubusercontent.com/u/172736367?s=400&u=3cb3931f4c12206017576dff0db74c6507ab4730&v=4"
+                                              class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West">
+                                          <div>
+                                              <h3 class="text-lg font-semibold text-black">Kanye West</h3>
+                                              <p class="text-black-500 text-md">Rapper &amp; Entrepreneur</p>
+                                          </div>
+                                      </div>
+                                      <p class="leading-normal text-gray-800 text-md">Find God.</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </li>
+                      <li class="text-sm leading-6">
+                          <div class="relative group border border-gray-200 bg-gray-100 py-2 px-6 gap-2 rounded">
+                              <div
+                                  class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                              </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
+                                  <div
+                                      class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                      <div class="flex items-center space-x-4"><img
+                                              src="https://avatars.githubusercontent.com/u/172736367?s=400&u=3cb3931f4c12206017576dff0db74c6507ab4730&v=4"
+                                              class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
+                                          <div>
+                                              <h3 class="text-lg font-semibold text-black">Tim Cook</h3>
+                                              <p class="text-black-500 text-md">CEO of Apple</p>
+                                          </div>
+                                      </div>
+                                      <p class="leading-normal text-gray-800 text-md">Diam quis enim lobortis scelerisque
+                                          fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
+                                          aliquam malesuada bibendum.</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </li>
+                      <li class="text-sm leading-6">
+                          <div class="relative group border border-gray-200 bg-gray-100 py-2 px-6 gap-2 rounded">
+                              <div
+                                  class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                              </div><a href="https://twitter.com/kanyewest" class="cursor-pointer">
+                                  <div
+                                      class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                      <div class="flex items-center space-x-4"><img
+                                              src="https://avatars.githubusercontent.com/u/172736367?s=400&u=3cb3931f4c12206017576dff0db74c6507ab4730&v=4"
+                                              class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West">
+                                          <div>
+                                              <h3 class="text-lg font-semibold text-black">Kanye West</h3>
+                                              <p class="text-black-500 text-md">Rapper &amp; Entrepreneur</p>
+                                          </div>
+                                      </div>
+                                      <p class="leading-normal text-gray-800 text-md">Find God.</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </li>
+                      <li class="text-sm leading-6">
+                          <div class="relative group border border-gray-200 bg-gray-100 py-2 px-6 gap-2 rounded">
+                              <div
+                                  class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                              </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
+                                  <div
+                                      class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                      <div class="flex items-center space-x-4"><img
+                                              src="https://avatars.githubusercontent.com/u/172736367?s=400&u=3cb3931f4c12206017576dff0db74c6507ab4730&v=4"
+                                              class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
+                                          <div>
+                                              <h3 class="text-lg font-semibold text-black">Tim Cook</h3>
+                                              <p class="text-black-500 text-md">CEO of Apple</p>
+                                          </div>
+                                      </div>
+                                      <p class="leading-normal text-gray-800 text-md">Diam quis enim lobortis scelerisque
+                                          fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
+                                          aliquam malesuada bibendum.</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </li>
+                  </ul>
+
+
+                  <ul class="hidden space-y-8 sm:block">
+                      <li class="text-sm leading-6">
+                          <div class="relative group border border-gray-200 bg-gray-100 py-2 px-6 gap-2 rounded">
+                              <div
+                                  class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                              </div><a href="https://twitter.com/paraga" class="cursor-pointer">
+                                  <div
+                                      class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                      <div class="flex items-center space-x-4"><img
+                                              src="https://avatars.githubusercontent.com/u/172736367?s=400&u=3cb3931f4c12206017576dff0db74c6507ab4730&v=4"
+                                              class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Parag Agrawal">
+                                          <div>
+                                              <h3 class="text-lg font-semibold text-black">Parag Agrawal</h3>
+                                              <p class="text-black-500 text-md">CEO of Twitter</p>
+                                          </div>
+                                      </div>
+                                      <p class="leading-normal text-gray-800 text-md">Enim neque volutpat ac tincidunt vitae
+                                          semper. Mattis aliquam faucibus purus in massa tempor. Neque vitae tempus quam
+                                          pellentesque nec. Turpis cursus in hac habitasse platea dictumst.</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </li>
+                      <li class="text-sm leading-6">
+                          <div class="relative group border border-gray-200 bg-gray-100 py-2 px-6 gap-2 rounded">
+                              <div
+                                  class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                              </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
+                                  <div
+                                      class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                      <div class="flex items-center space-x-4"><img
+                                              src="https://avatars.githubusercontent.com/u/172736367?s=400&u=3cb3931f4c12206017576dff0db74c6507ab4730&v=4"
+                                              class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
+                                          <div>
+                                              <h3 class="text-lg font-semibold text-black">Tim Cook</h3>
+                                              <p class="text-black-500 text-md">CEO of Apple</p>
+                                          </div>
+                                      </div>
+                                      <p class="leading-normal text-gray-800 text-md">Diam quis enim lobortis scelerisque
+                                          fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
+                                          aliquam malesuada bibendum.</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </li>
+                      <li class="text-sm leading-6">
+                          <div class="relative group border border-gray-200 bg-gray-100 py-2 px-6 gap-2 rounded">
+                              <div
+                                  class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                              </div><a href="https://twitter.com/paraga" class="cursor-pointer">
+                                  <div
+                                      class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                      <div class="flex items-center space-x-4"><img
+                                              src="https://avatars.githubusercontent.com/u/172736367?s=400&u=3cb3931f4c12206017576dff0db74c6507ab4730&v=4"
+                                              class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Parag Agrawal">
+                                          <div>
+                                              <h3 class="text-lg font-semibold text-black">Parag Agrawal</h3>
+                                              <p class="text-black-500 text-md">CEO of Twitter</p>
+                                          </div>
+                                      </div>
+                                      <p class="leading-normal text-gray-800 text-md">Enim neque volutpat ac tincidunt vitae
+                                          semper. Mattis aliquam faucibus purus in massa tempor. Neque vitae tempus quam
+                                          pellentesque nec. Turpis cursus in hac habitasse platea dictumst.</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </li>
+                      <li class="text-sm leading-6">
+                          <div class="relative group border border-gray-200 bg-gray-100 py-2 px-6 gap-2 rounded">
+                              <div
+                                  class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                              </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
+                                  <div
+                                      class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                      <div class="flex items-center space-x-4"><img
+                                              src="https://avatars.githubusercontent.com/u/172736367?s=400&u=3cb3931f4c12206017576dff0db74c6507ab4730&v=4"
+                                              class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
+                                          <div>
+                                              <h3 class="text-lg font-semibold text-black">Tim Cook</h3>
+                                              <p class="text-black-500 text-md">CEO of Apple</p>
+                                          </div>
+                                      </div>
+                                      <p class="leading-normal text-gray-800 text-md">Diam quis enim lobortis scelerisque
+                                          fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
+                                          aliquam malesuada bibendum.</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </li>
+                  </ul>
+
+
+                  <ul class="hidden space-y-8 lg:block">
+                      <li class="text-sm leading-6">
+                          <div class="relative group border border-gray-200 bg-gray-100 py-2 px-6 gap-2 rounded">
+                              <div
+                                  class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                              </div><a href="https://twitter.com/satyanadella" class="cursor-pointer">
+                                  <div
+                                      class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                      <div class="flex items-center space-x-4"><img
+                                              src="https://avatars.githubusercontent.com/u/172736367?s=400&u=3cb3931f4c12206017576dff0db74c6507ab4730&v=4"
+                                              class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Satya Nadella">
+                                          <div>
+                                              <h3 class="text-lg font-semibold text-black">Satya Nadella</h3>
+                                              <p class="text-black-500 text-md">CEO of Microsoft</p>
+                                          </div>
+                                      </div>
+                                      <p class="leading-normal text-gray-800 text-md">Tortor dignissim convallis aenean et
+                                          tortor at. At ultrices mi tempus imperdiet nulla malesuada. Id cursus metus aliquam
+                                          eleifend mi. Quis ipsum suspendisse ultrices gravida dictum fusce ut.</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </li>
+                      <li class="text-sm leading-6">
+                          <div class="relative group border border-gray-200 bg-gray-100 py-2 px-6 gap-2 rounded">
+                              <div
+                                  class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                              </div><a href="https://twitter.com/dan_schulman" class="cursor-pointer">
+                                  <div
+                                      class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                      <div class="flex items-center space-x-4"><img
+                                              src="https://avatars.githubusercontent.com/u/172736367?s=400&u=3cb3931f4c12206017576dff0db74c6507ab4730&v=4"
+                                              class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Dan Schulman">
+                                          <div>
+                                              <h3 class="text-lg font-semibold text-black">Dan Schulman</h3>
+                                              <p class="text-black-500 text-md">CEO of PayPal</p>
+                                          </div>
+                                      </div>
+                                      <p class="leading-normal text-gray-800 text-md">Quam pellentesque nec nam aliquam sem
+                                          et tortor consequat id. Enim sit amet venenatis urna cursus.</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </li>
+                      <li class="text-sm leading-6">
+                          <div class="relative group border border-gray-200 bg-gray-100 py-2 px-6 gap-2 rounded">
+                              <div
+                                  class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                              </div><a href="https://twitter.com/satyanadella" class="cursor-pointer">
+                                  <div
+                                      class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                      <div class="flex items-center space-x-4"><img
+                                              src="https://avatars.githubusercontent.com/u/172736367?s=400&u=3cb3931f4c12206017576dff0db74c6507ab4730&v=4"
+                                              class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Satya Nadella">
+                                          <div>
+                                              <h3 class="text-lg font-semibold text-black">Satya Nadella</h3>
+                                              <p class="text-black-500 text-md">CEO of Microsoft</p>
+                                          </div>
+                                      </div>
+                                      <p class="leading-normal text-gray-800 text-md">Tortor dignissim convallis aenean et
+                                          tortor at. At ultrices mi tempus imperdiet nulla malesuada. Id cursus metus aliquam
+                                          eleifend mi. Quis ipsum suspendisse ultrices gravida dictum fusce ut.</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </li>
+                      <li class="text-sm leading-6">
+                          <div class="relative group border border-gray-200 bg-gray-100 py-2 px-6 gap-2 rounded">
+                              <div
+                                  class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                              </div><a href="https://twitter.com/dan_schulman" class="cursor-pointer">
+                                  <div
+                                      class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                      <div class="flex items-center space-x-4"><img
+                                              src="https://avatars.githubusercontent.com/u/172736367?s=400&u=3cb3931f4c12206017576dff0db74c6507ab4730&v=4"
+                                              class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Dan Schulman">
+                                          <div>
+                                              <h3 class="text-lg font-semibold text-black">Dan Schulman</h3>
+                                              <p class="text-black-500 text-md">CEO of PayPal</p>
+                                          </div>
+                                      </div>
+                                      <p class="leading-normal text-gray-800 text-md">Quam pellentesque nec nam aliquam sem
+                                          et tortor consequat id. Enim sit amet venenatis urna cursus.</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </li>
+                  </ul>
+
+              </div>
+          </div>
+      </section>
+      <!--  Grid ende   -->
+
+
+      <!--  Tabelle anfang   -->
+      <div class="shadow-lg rounded-lg overflow-hidden mx-4 md:mx-10">
+            <table class="w-full table-fixed">
+                <thead>
+                    <tr class="bg-gray-100">
+                        <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Name</th>
+                        <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Email</th>
+                        <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Phone</th>
+                        <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Status</th>
+                        <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">progress</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white">
+                    <tr>
+                        <td class="py-4 px-6 border-b border-gray-200">John Doe</td>
+                        <td class="py-4 px-6 border-b border-gray-200 truncate">johndoe@gmail.com</td>
+                        <td class="py-4 px-6 border-b border-gray-200">555-555-5555</td>
+                        <td class="py-4 px-6 border-b border-gray-200">
+                            <span class="bg-green-500 text-black py-1 px-2 rounded-full text-xs">Active</span>
+                        </td>
+                        <td class="px-6 border-b border-gray-200 align-middle text-xs whitespace-nowrap p-4">
+                            <div class="flex items-center">
+                                <span class="mr-2 text-xs font-medium">30%</span>
+                                <div class="relative w-full">
+                                    <div class="w-full bg-gray-200 rounded-sm h-2">
+                                        <div class="bg-red-600 h-2 rounded-sm" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-6 border-b border-gray-200">Jane Doe</td>
+                        <td class="py-4 px-6 border-b border-gray-200 truncate">janedoe@gmail.com</td>
+                        <td class="py-4 px-6 border-b border-gray-200">555-555-5555</td>
+                        <td class="py-4 px-6 border-b border-gray-200">
+                            <span class="bg-red-500 text-black py-1 px-2 rounded-full text-xs">Inactive</span>
+                        </td>
+                        <td class="px-6 border-b border-gray-200 align-middle text-xs whitespace-nowrap p-4">
+                            <div class="flex items-center">
+                                <span class="mr-2 text-xs font-medium">30%</span>
+                                <div class="relative w-full">
+                                    <div class="w-full bg-gray-200 rounded-sm h-2">
+                                        <div class="bg-red-600 h-2 rounded-sm" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-6 border-b border-gray-200">Jane Doe</td>
+                        <td class="py-4 px-6 border-b border-gray-200 truncate">janedoe@gmail.com</td>
+                        <td class="py-4 px-6 border-b border-gray-200">555-555-5555</td>
+                        <td class="py-4 px-6 border-b border-gray-200">
+                            <span class="bg-red-500 text-black py-1 px-2 rounded-full text-xs">Inactive</span>
+                        </td>
+                        <td class="px-6 border-b border-gray-200 align-middle text-xs whitespace-nowrap p-4">
+                            <div class="flex items-center">
+                                <span class="mr-2 text-xs font-medium">30%</span>
+                                <div class="relative w-full">
+                                    <div class="w-full bg-gray-200 rounded-sm h-2">
+                                        <div class="bg-red-600 h-2 rounded-sm" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-6 border-b border-gray-200">Jane Doe</td>
+                        <td class="py-4 px-6 border-b border-gray-200 truncate">janedoe@gmail.com</td>
+                        <td class="py-4 px-6 border-b border-gray-200">555-555-5555</td>
+                        <td class="py-4 px-6 border-b border-gray-200">
+                            <span class="bg-red-500 text-black py-1 px-2 rounded-full text-xs">Inactive</span>
+                        </td>
+                        <td class="px-6 border-b border-gray-200 align-middle text-xs whitespace-nowrap p-4">
+                            <div class="flex items-center">
+                                <span class="mr-2 text-xs font-medium">30%</span>
+                                <div class="relative w-full">
+                                    <div class="w-full bg-gray-200 rounded-sm h-2">
+                                        <div class="bg-red-600 h-2 rounded-sm" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Add more rows here -->
+                </tbody>
+            </table>
+        </div>
+        <!--  Tabelle ende   -->
+    </div>
+</body>
+</html>
